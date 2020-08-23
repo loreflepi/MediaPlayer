@@ -80,37 +80,21 @@ li:hover a{
     min-width: 325px;
 }
 
-.buscar__h2{
-    text-align: center;
-    margin-top:50px;
-    color:white;
-}
-
-.buscar__input{
-    margin-left:15%;
-    width:70%;
-    border-radius: 50px;
-    height:40px;
-    border:2px solid white;
-    outline: none;
-    font-size: 20px;
-    padding-left:20px;
+.container__video--play{
+    width:100px;
     box-sizing: border-box;
-    background-color: rgba(255,255,255,0.3);
-    color:white;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 0px;
+    padding:10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
     font-family: 'Muli';
-}
-
-.buscar__input::placeholder{
-    color:rgba(255,255,255,0.7);
-    font-family: 'Muli';
-}
-
-.display__text{
-    color:white;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-left:30px;
 }
 
 .footer__container{
