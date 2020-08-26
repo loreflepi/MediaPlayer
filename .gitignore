@@ -2,3 +2,5 @@
 .idea/MediaPlayer.iml
 .idea/modules.xml
 .idea/workspace.xml
+node_modules/
+.idea/vcs.xml

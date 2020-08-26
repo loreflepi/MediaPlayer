@@ -1,5 +1,5 @@
-import MediaPlayer from "/js/MediaPlayer.js";
-import Plugin from "/js/plugins.js";
+import MediaPlayer from "./MediaPlayer.js";
+import Plugin from "./plugins.js";
 
 const video = document.getElementById("video");
 const buttonPlay = document.getElementById("buttonPlay");
