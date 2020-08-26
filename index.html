@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/player.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <script defer type="text/javascript" src="js/player.js"></script>
+    <script defer type="module" src="js/player.js"></script>
+    <link rel="shortcut icon" href="#">
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +26,11 @@
     <section class ="container">
       <div class="container__video">
           <video id="video" class="container__video--element" src="https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg"></video>
-          <button id="buttonPlay" class="container__video--play" type="button" onclick="startVideo()">Play/Pause</button>
+          <div class="container__button">
+              <button id="buttonPlay" class="container__button--play" type="button">Play/Pause</button>
+              <button id="buttonMute" class="container__button--play" type="button">Mute</button>
+              <button id="buttonUnMute" class="container__button--play" type="button">UnMute</button>
+          </div>
       </div>
     </section>
 </body>

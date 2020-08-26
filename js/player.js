@@ -1,22 +1,24 @@
+import MediaPlayer from "/js/MediaPlayer.js";
+import Plugin from "/js/plugins.js";
+
 const video = document.getElementById("video");
+const buttonPlay = document.getElementById("buttonPlay");
+const buttonMute = document.getElementById("buttonMute");
+const buttonUnMute = document.getElementById("buttonUnMute");
 
-class MediaPlayer{
-    constructor(config){
-        this.media = config.el;
-    }
+let mediaplayer = new MediaPlayer({el : video, plugins: [new Plugin()]});
 
-    playVideo(){
-        if(this.media.paused){
-            this.media.play();
-        }
-        else{
-            this.media.pause();
-        }
+buttonPlay.onclick = () => {
+    mediaplayer.playVideo();
 
-    }
 }
 
-let mediaplayer = new MediaPlayer({el : video});
-function startVideo(){
-    mediaplayer.playVideo();
+buttonMute.onclick = () => {
+    mediaplayer.mute();
+
+}
+
+buttonUnMute.onclick = () => {
+    mediaplayer.unMute();
+
 }

@@ -80,7 +80,7 @@ li:hover a{
     min-width: 325px;
 }
 
-.container__video--play{
+.container__button--play{
     width:100px;
     box-sizing: border-box;
     margin-bottom: 20px;
