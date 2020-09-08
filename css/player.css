@@ -67,6 +67,33 @@ li:hover a{
     cursor: pointer;
 }
 
+.header__options{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__options--home{
+    color:white;
+    padding:20px;
+    cursor: pointer;
+}
+
+.header__options--movie{
+    color:white;
+    padding:20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header__options--home:hover{
+    text-decoration: underline;
+}
+
+.header__options--movie:hover{
+    text-decoration: underline;
+}
+
 .container{
     display:flex;
     align-items: center;
