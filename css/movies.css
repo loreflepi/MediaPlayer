@@ -1,0 +1,31 @@
+#container__movies{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    margin: 15px;
+}
+
+.container__movies--details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__movies--details p, b{
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+
+.container__movies--details img{
+    height: 330px;
+    width: 260px;
+    border-radius: 7%;
+    padding: 10px;
+}
+
+.section__movies--title{
+    padding-left: 50px;
+    padding-top: 50px;
+    color: white;
+}
