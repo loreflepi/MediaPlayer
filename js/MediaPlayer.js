@@ -16,8 +16,19 @@ class MediaPlayer{
     }
 
     _initializePlugin(){
+        let player = {
+          play: () => this.playVideo(),
+          media: this.media,
+          get muted(){
+              return this.media.muted;
+          },
+          set muted(value){
+              this.media.muted = value;
+          }
+        }
+
         this.plugins.forEach(iterator =>{
-           iterator.run(this);
+           iterator.run(player);
         });
     }
 

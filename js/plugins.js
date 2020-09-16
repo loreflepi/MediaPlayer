@@ -3,8 +3,8 @@ class Plugin{
     }
 
     run(player){
-        player.mute();
-        player.playVideo();
+        player.muted = true;
+        player.play();
     }
 }
 
