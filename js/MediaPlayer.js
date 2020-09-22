@@ -15,6 +15,15 @@ class MediaPlayer{
 
     }
 
+    reproducir(){
+        this.media.play();
+
+    }
+
+    pausar(){
+        this.media.pause();
+    }
+
     _initializePlugin(){
         let player = {
           play: () => this.playVideo(),
@@ -24,7 +33,9 @@ class MediaPlayer{
           },
           set muted(value){
               this.media.muted = value;
-          }
+          },
+          reproducir: this.reproducir,
+          pausar: this.pausar
         }
 
         this.plugins.forEach(iterator =>{
