@@ -1,4 +1,4 @@
-import MediaPlayer from "./mediaPlayer.js";
+import MediaPlayer from "./generalPlayer.js";
 import Plugin from "./plugins.js";
 import VideoController from "./videoController.js";
 
