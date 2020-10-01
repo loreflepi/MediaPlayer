@@ -5,11 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
+    "start": "live-server",
+    "comenzar": "parcel index.html ts/indexts.html"
   },
   "author": "Lorena Pinzon",
   "license": "MIT",
   "dependencies": {
-    "live-server": "^1.2.1"
-  }
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
